@@ -1,0 +1,137 @@
+.hero-img {
+  position: relative;
+}
+
+.profile-image {
+  border-radius: 50%;
+  background-color: #183153;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.5rem solid #e5e8e8;
+
+  height: 18rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 18rem;
+  animation: image 2s linear infinite;
+}
+
+.home-page {
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  position: relative;
+}
+.title h1 {
+  color: #e5e8e8;
+  font-size: 3.2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.waving {
+  width: 60px;
+  position: absolute;
+  left: 16rem;
+  top: 5.8rem;
+}
+.title-text {
+  font-size: 1.3rem;
+  font-family: Mulish, sans-serif;
+  color: #e5e8e8;
+  margin-bottom: 1rem;
+}
+.contact-icon {
+  color: #e5e8e8;
+  margin: 1rem 0.6rem;
+  font-size: 1.7rem;
+  transition: all 0.3s linear;
+}
+.contact-icon:hover {
+  color: blue;
+  transform: scale(1.05);
+}
+.logo-img {
+  width: 38px;
+}
+
+.skill-body {
+  display: flex;
+  gap: 2rem;
+}
+.skill-body ul li {
+  text-decoration: none;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  display: flex;
+  height: 3.5rem;
+  justify-content: center;
+  width: 3.5rem;
+  transition: all 0.3s linear;
+}
+.skill-body ul li:hover {
+  transform: scale(1.04);
+}
+.skill-section {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 6rem;
+  color: #e5e8e8;
+}
+.skill-section p {
+  font-size: 1.2rem;
+  font-family: Mulish, sans-serif;
+  margin: 0 2rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+  }
+  .profile-image {
+    border-radius: 50%;
+    background-color: #183153;
+    height: 15rem;
+    position: absolute;
+    width: 15rem;
+    top: -40rem;
+    left: -6.8rem;
+    border: none;
+  }
+  .title {
+    margin-top: 17rem;
+    margin-left: 2rem;
+  }
+  .skill-body {
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill-section {
+    display: flex;
+    margin: 2rem 1rem;
+    flex-direction: column;
+  }
+  .skill-section p {
+    margin: 2rem 0;
+  }
+}

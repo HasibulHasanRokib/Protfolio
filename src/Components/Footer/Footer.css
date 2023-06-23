@@ -1,0 +1,19 @@
+.footer{
+    /* background-color: #19376D; */
+    margin-top: 10.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+.footer-text{
+    font-weight: lighter;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    /* background-color: #f9f9f9; */
+    /* background-color: #E5E8E8; */
+    background-color: #0B2447;
+
+}
+.menu-icon{
+    /* display: inline-block;
+    text-align: end;
+    position: absolute;
+    top: 1rem;
+    left: 21rem; */
+    display: none;
+
+}
+
+
+.app{
+    width: 1200px;
+    margin: 0 18rem;
+    color: #183153;
+}
+@media only screen and (max-width: 600px){
+    .app{
+        width: 343px;
+        margin: 0;
+    }
+    .menu-icon{
+        display: inline-block;
+        text-align: end;
+        position: absolute;
+        top: 1rem;
+        left: 19rem;
+    color: #E5E8E8;
+
+    }
+}
