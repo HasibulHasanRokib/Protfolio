@@ -1,5 +1,5 @@
 import './Home.css'
-
+import Profile from '/src/assets/rokib.png'
 
 
 
@@ -39,7 +39,8 @@ const Home = ({logo})=> {
             <div className="hero-img">
               <img
                 className="profile-image"
-                src="/src/assets/rokib.png"
+                src={Profile}
+                // src="/src/assets/rokib.png"
                 alt=""
                 srcSet=""
               />
