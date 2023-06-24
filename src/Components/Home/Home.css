@@ -132,7 +132,7 @@ padding-top: 4rem;
     border: none; */
     /* display: none; */
     margin-left: 4rem;
-    margin-top: 1rem;
+    margin-top: 6rem;
     width: 16rem;
     height: 16rem;
   }
@@ -149,7 +149,7 @@ padding-top: 4rem;
   }
   .skill-section {
     display: flex;
-    margin: 2rem 1rem;
+    margin: 11rem 1rem;
     flex-direction: column;
   }
   .skill-section p {

@@ -104,15 +104,15 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 120px;
   }
   #text-box {
-    width: 90%;
+    width: 80%;
     margin: 0.5rem 1.5rem;
   }
   #email {
-    width: 90%;
+    width: 80%;
     margin: 0.5rem 1.5rem;
   }
   #name {
-    width: 90%;
+    width: 80%;
     margin: 0.5rem 1.5rem;
   }
 }

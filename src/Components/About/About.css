@@ -181,7 +181,7 @@ h3 {
   }
   .about-timeline {
     flex-direction: column;
-    margin: 0 2.5rem;
+    margin: 0 1.5rem;
   }
   .timeline-box {
     width: 20rem;
