@@ -1,65 +1,53 @@
-import "./Navbar.style.css"
+import "./Navbar.style.css";
 import Footer from "/src/Components/Footer/Footer";
+import { useState } from 'react';
 
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
+const NavBar = () => {
 
-const NavBar = ({showNavbar}) => {
-const title="<Rokib the Dev/>"
+  const [showNavbar, setShowNavbar] = useState(true)
 
-
-
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar)
+  } 
+  const title = "<Rokib the Dev/>";
 
   return (
-
-    <>
-
-       
-{showNavbar && (
   <>
-  <nav>
-      <div className="container">
-      
-      <h1 className="navbar-brand">{title}</h1>
-
-        <div >
-        <div className='navbarNav'>
-        
-         
-          <ul className="navbar-nav" >
-            <li className="nav-item">
-              <NavLink to={"/"}  className="nav-link"><i className="fa-solid fa-house fa-icon"></i>Home</NavLink>
-            </li>
-           
-            <li className="nav-item">
-              <NavLink to={"/about"} className="nav-link" ><i className="fa-solid fa-address-card fa-icon"></i>About</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to={"/project"} className="nav-link" ><i className="fa-solid fa-link fa-icon"></i>Project</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to={"/contact"} className="nav-link" ><i className="fa-solid fa-address-book fa-icon"></i>Contact</NavLink>
-            </li>
-
-          </ul>
-          </div>
-       
-
-
+    <nav>
+    <div className="nav-sidebar" onClick={handleShowNavbar}>
+        <i className="fa-solid fa-bars fa-2x"></i>
         </div>
-      
+        {showNavbar && (
+          <>
+          <div className= "nav-body">
+        <div className="nav-logo">
+          <h2>{title}</h2>
+        </div>
+        <div className="nav-menu">
+          <ul>
+            <li><NavLink className="nav-link" to={"/"}> <i className="fa-solid fa-house fa-icon"></i>Home</NavLink></li>
+            <li><NavLink className="nav-link" to={"/about"}> <i className="fa-solid fa-address-card fa-icon"></i>About</NavLink></li>
+            <li><NavLink className="nav-link" to={"/project"}> <i className="fa-solid fa-link fa-icon"></i>Project</NavLink></li>
+            <li><NavLink className="nav-link" to={"/contact"}> <i className="fa-solid fa-address-book fa-icon"></i>Contact</NavLink></li>
+          </ul>
+        </div>
+        <Footer/>
+   
+        <i onClick={()=>{setShowNavbar(!showNavbar)}}  className="fa-solid fa-xmark"></i>
 
+        
+        {/* <i class="fa-solid fa-xmark"></i> */}
       </div>
-      <Footer/>
+          </>
+        )}
+
+    
     </nav>
   </>
-)}
-
   
- 
+  );
+};
 
-    </>
-  )
-}
-
-export default NavBar
+export default NavBar;

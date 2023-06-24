@@ -1,29 +1,38 @@
+.home__section{
+  /* background-color: #183153; */
+
+}
+
 .hero-img {
   position: relative;
 }
 
 .profile-image {
   border-radius: 50%;
-  background-color: #183153;
+  /* border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; */
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 0.5rem solid #e5e8e8;
-
+  /* border: 0.5rem solid #e5e8e8; */
+  border: 0.3rem solid #2d2e32;
+background-color: #34495E;
   height: 18rem;
   position: relative;
   transition: all 1s ease-in-out;
   width: 18rem;
-  animation: image 2s linear infinite;
+  box-shadow: 0 0 5px #fff;
+  animation: image 8s ease-in-out infinite;
 }
 
+
 .home-page {
+  /* background-color: #0B2447; */
   display: flex;
-  height: auto;
-  align-items: center;
+  height: 75vh;
+  padding-top:7rem ;
+  /* align-items: center; */
   justify-content: center;
-  margin-top: 9rem;
-  margin-bottom: 6rem;
+  
 }
 
 .title {
@@ -33,7 +42,7 @@
   position: relative;
 }
 .title h1 {
-  color: #e5e8e8;
+  color: #2d2e32;
   font-size: 3.2rem;
   font-family: Arial, sans-serif;
   line-height: 1.2;
@@ -41,20 +50,15 @@
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-.waving {
-  width: 60px;
-  position: absolute;
-  left: 16rem;
-  top: 5.8rem;
-}
+
 .title-text {
   font-size: 1.3rem;
   font-family: Mulish, sans-serif;
-  color: #e5e8e8;
+  color: #2d2e32;
   margin-bottom: 1rem;
 }
 .contact-icon {
-  color: #e5e8e8;
+  color: #2d2e32;
   margin: 1rem 0.6rem;
   font-size: 1.7rem;
   transition: all 0.3s linear;
@@ -64,17 +68,19 @@
   transform: scale(1.05);
 }
 .logo-img {
-  width: 38px;
+  width: 34px;
+  
+  
 }
 
 .skill-body {
   display: flex;
   gap: 2rem;
 }
-.skill-body ul li {
+.skill-body ul li{
   text-decoration: none;
   align-items: center;
-  background-color: #fff;
+  background-color:#fff;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
   cursor: pointer;
@@ -91,34 +97,49 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  margin: 1rem 6rem;
-  color: #e5e8e8;
 }
 .skill-section p {
   font-size: 1.2rem;
   font-family: Mulish, sans-serif;
   margin: 0 2rem;
   font-weight: 600;
+  color: #2d2e32;
 }
 @media only screen and (max-width: 600px) {
-  .home-page {
+  /* .home-page {
     display: flex;
     flex-direction: column;
     margin: 1rem 2rem;
+  } */
+  .home-page{
+height: 70vh;
+padding-top: 0;
+display: flex;
+flex-direction: column-reverse;
+padding-top: 4rem;
+  }
+  .title h1{
+    font-size: 2.5rem;
   }
   .profile-image {
-    border-radius: 50%;
+    /* border-radius: 50%;
     background-color: #183153;
     height: 15rem;
     position: absolute;
     width: 15rem;
     top: -40rem;
     left: -6.8rem;
-    border: none;
+    border: none; */
+    /* display: none; */
+    margin-left: 4rem;
+    margin-top: 1rem;
+    width: 16rem;
+    height: 16rem;
   }
   .title {
-    margin-top: 17rem;
-    margin-left: 2rem;
+    /* margin-top: 17rem;
+    margin-left: 2rem; */
+    padding: 1rem;
   }
   .skill-body {
     flex-wrap: wrap;

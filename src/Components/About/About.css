@@ -1,9 +1,9 @@
 .about-section {
-  padding: 2rem 0;
-  margin: 3rem 5rem;
+  /* background-color: #0B2447; */
+  padding-top: 4rem;
   height: 100vh;
   font-family: Mulish, sans-serif;
-  color: #e5e8e8;
+  color: #2d2e32;
 }
 
 .about-text {
@@ -13,7 +13,7 @@
 }
 .about-text h4 {
   margin: 1.5rem 0;
-  color: #e5e8e8;
+  color: #2d2e32;
   font-size: 1.5rem;
 }
 .about-text h2 {
@@ -24,7 +24,7 @@
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.7rem;
-  color: #e5e8e8;
+  color: #2d2e32;
 }
 .about_me {
   margin-top: 4rem;
@@ -47,7 +47,7 @@
 }
 .about_more p span {
   font-weight: lighter;
-  color: #e5e8e8;
+  color: #2d2e32;
   font-size: 1rem;
 }
 .about-btn {
@@ -63,7 +63,7 @@
   color: #e5e8e8;
   cursor: pointer;
   font-weight: 600;
-  box-shadow: 0 0 10px #183153;
+  box-shadow: 0 0 2px #2d2e32;
 }
 .progress-bar {
   border: 1px solid;
@@ -78,27 +78,26 @@
   font-size: 0.9rem;
   margin-top: -1.2rem;
   font-weight: 200;
-  color: #e5e8e8;
+  color: #2d2e32;
 }
 .progress {
   width: 27rem;
   border: 1px solid;
   margin: 0.5rem 3rem;
   border-radius: 10px;
-  border-color: #e5e8e8;
+  border-color: #2d2e32;
   height: 8px;
 }
 .skill-name {
   margin: 0.2rem 3.2rem;
   font-weight: 200;
   font-size: 1rem;
-  color: #e5e8e8;
+  color: #2d2e32;
 }
 
 .timeline-box {
-  width: 32rem;
+  width: 25rem;
   padding: 1.5rem 0;
-  height: 84vh;
 }
 .circle-dot {
   position: absolute;
@@ -117,19 +116,19 @@
   border-left: 1px solid #576cbc;
 }
 .timeline {
-  background-color: #183153;
+  background-color: #fff;
 
   padding: 30px 35px;
   border: 1px solid #d4d4e3;
   border-radius: 10px;
   width: 100%;
   position: relative;
-  box-shadow: 0 0 5px #183153;
+  box-shadow: 0 0 5px #d4d4e3;
 }
 .timeline-text {
   font-size: 16px;
   line-height: 25px;
-  color: #e5e8e8;
+  color: #2d2e32;
   margin: 0;
 }
 .timeline-title {
@@ -142,7 +141,7 @@
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 12px;
-  color: #e5e8e8;
+  color: #2d2e32;
 }
 .about-timeline {
   display: flex;
@@ -156,11 +155,12 @@ h3 {
 }
 @media only screen and (max-width: 600px) {
   .about-section {
-    padding: 0rem 0;
-    margin: 1rem 1rem;
+    padding:30px 10px;
+    /* margin: 1rem 1rem; */
   }
   .about_me {
     flex-direction: column;
+    margin: 3rem;
   }
   .about_more {
     display: grid;
@@ -181,6 +181,7 @@ h3 {
   }
   .about-timeline {
     flex-direction: column;
+    margin: 0 2.5rem;
   }
   .timeline-box {
     width: 20rem;

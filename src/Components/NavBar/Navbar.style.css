@@ -1,69 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-
-
-nav {
-  background-color: #19376D;
+.nav-body{
+  background-color: #fff ;
+  width: 18rem;
   height: 100vh;
   position: fixed;
-  width: 18%;
-  top: 0;
-
+  /* top: 0; */
+  padding: 2rem;
   z-index: 200;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
 }
 
+.nav-logo{
+  margin: 2.5rem 1rem;
+  color: #0B2447;
 
-.navbar-nav {
-  margin-top: 5.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
-
-.nav-item {
+.nav-menu{
+  margin-top: 8rem;
+}
+.nav-menu ul li{
+  margin: 1rem 0;
+  padding: 0.7rem 0;
   list-style: none;
   border-bottom: 1px solid #d4d4e3;
-  padding: 1rem 0rem;
-
 }
-.fa-icon {
-  margin: 0 1rem;
-  /* font-size: 1.3rem; */
-}
-.nav-link {
-  font-size: 0.9rem;
+.nav-link{
   text-decoration: none;
-  /* color: #183153; */
-color: #fff;
-  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #0B2447;
   transition: all 0.3s linear;
 }
-
 .nav-link:hover{
- color: #E57C23;
- font-size: 1.2rem;
+  color: blue;
+  font-size: 1.3rem;
 }
-.nav-link.active{
-    color: #E57C23;
-    font-size: 1.2rem;   
+.nav-menu ul li .active{
+  color: blue;
+  font-size: 1.3rem; 
+}
+.fa-icon{
+  margin:0 1rem;
+}
+.nav-sidebar{
+  color: #0B2447;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 1.5rem;
+  left: 2rem;
+  background-color: #f9f9f9;
+  padding: 0.7rem;
+  z-index: 150;
+}
+.fa-xmark{
+ display: none;
 }
 
-.navbar-brand {
-  text-decoration: none;
-  color: #fff;
-
-  font-family: Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 3rem;
-  font-family: "Pacifico", cursive;
-}
-@media only screen and (max-width: 600px) {
-  nav{
-    width: 73%;
-    transition: all 0.3s ease-in;
+@media only screen and (max-width: 600px){
+  .nav-sidebar{
+    left: 22rem;
+    top: 0;
+    /* width: 100%; */
+    display: inline-block;
+    align-items: center;
+    justify-content: end;
+    box-shadow: 0 0 10px #999;
   }
+  .fa-xmark{
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 15rem;
+    font-size: 1.8rem;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .fa-xmark:hover{
+    font-size: 2rem;
+    
+    }
 }
-
 

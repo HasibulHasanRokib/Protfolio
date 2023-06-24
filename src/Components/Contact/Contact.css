@@ -1,9 +1,10 @@
 .contact-us {
-  padding-top: 80px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+padding-top: 10rem; 
+/* background-color: #0B2447;  */
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .contacts {
-  margin-left: 16.4rem;
+  margin-left: 10.4rem;
 }
 .row {
   display: flex;
@@ -11,7 +12,7 @@
 }
 
 .contact-us-title {
-  color: #e5e8e8;
+  color: #2d2e32;
   letter-spacing: 2px;
   font-size: 1.9rem;
   margin-bottom: 30px;
@@ -20,7 +21,7 @@
   padding: 10px;
 }
 .card-contacts {
-  color: #e5e8e8;
+  color: #2d2e32;
   text-align: center;
   margin-top: 10px;
   margin: 0 1.5rem;
@@ -44,31 +45,31 @@
 }
 
 #name {
-  color: #e5e8e8;
-  width: 60%;
+  color: #2d2e32;
+  width: 75%;
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
   border: 1px solid #e5e8e8;
 }
 #email {
-  color: #183153;
-  width: 60%;
+  color: #2d2e32;
+  width: 75%;
   margin: 10px;
   padding: 10px;
 
   border-radius: 15px;
-  border: 1px solid #183153;
+  border: 1px solid #e5e8e8;
 }
 #text-box {
-  color: #183153;
-  width: 60%;
+  color: #2d2e32;
+  width: 75%;
   height: 150px;
   margin: 10px;
   padding: 10px;
 
   border-radius: 15px;
-  border: 1px solid #183153;
+  border: 1px solid #e5e8e8;
 }
 .btn-submit {
   margin: 0px 170px;
@@ -79,6 +80,7 @@
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 10px;
+  border-color: #e5e8e8;
 }
 @media only screen and (max-width: 600px) {
   .contacts {
@@ -99,7 +101,7 @@
     width: 150px;
   }
   .contact-us {
-    padding-top: 0;
+    padding-top: 120px;
   }
   #text-box {
     width: 90%;

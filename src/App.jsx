@@ -4,8 +4,8 @@ import Home from "./Components/Home"
 import NavBar from "./Components/NavBar"
 import Contact from "./Components/Contact/Contact";
 import Project from "./Components/Project/Project";
+import { useState } from "react";
 
-import { useState } from 'react';
 // import Footer from "./Components/Footer/Footer";
 
 const logoImg=[
@@ -46,21 +46,14 @@ function App() {
   const [logo]=useState(logoImg)
 
 
-  const [showNavbar, setShowNavbar] = useState(true)
 
-const handleShowNavbar = () => {
-  setShowNavbar(!showNavbar)
-} 
 
 
   return (
     <>
      <BrowserRouter>
-     <NavBar showNavbar={showNavbar}/>
-     <div className="app">
-     <div className="menu-icon" onClick={handleShowNavbar}>
-        <i className="fa-solid fa-bars fa-2x"></i>
-        </div>
+     <NavBar />
+   <div className="container">
       <Routes>
         <Route path="/" element={<Home logo={logo}/>}/>
         <Route path="/about" element={<About  />}/>
@@ -68,7 +61,6 @@ const handleShowNavbar = () => {
         <Route path="/project" element={<Project />}/>
       </Routes>
       </div>
-      {/* <Footer/> */}
      </BrowserRouter>
      
      

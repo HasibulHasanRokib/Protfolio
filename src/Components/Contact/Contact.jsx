@@ -8,7 +8,6 @@ const Contact = () => {
         <>
     <div id="contact" className="contact-us">
       <div className=" text-center">
-        <h4  className="contact-us-title">Contact!</h4>
     
         <div className="contact-body">
           <div className="contacts">

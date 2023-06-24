@@ -6,31 +6,24 @@
 
 }
 body{
-    /* background-color: #f9f9f9; */
+    background-color: #f9f9f9;
     /* background-color: #E5E8E8; */
-    background-color: #0B2447;
+    /* background-color: #0B2447; */
 
-}
-.menu-icon{
-    /* display: inline-block;
-    text-align: end;
-    position: absolute;
-    top: 1rem;
-    left: 21rem; */
-    display: none;
+
 
 }
 
-
-.app{
-    width: 1200px;
-    margin: 0 18rem;
-    color: #183153;
+.container{
+   width: 1000px;
+   margin: 0 20rem;
 }
+
+
 @media only screen and (max-width: 600px){
-    .app{
-        width: 343px;
-        margin: 0;
+    .container{
+        width: 413px;
+        margin: 0 0;
     }
     .menu-icon{
         display: inline-block;

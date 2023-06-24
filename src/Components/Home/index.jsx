@@ -7,7 +7,8 @@ const Home = ({logo})=> {
 
 
   return (
-    <>
+    <section className='home__section'>
+    
       <div id="home" className="home-page">
           <div className="heading-section">
             <div className="title">
@@ -59,7 +60,7 @@ const Home = ({logo})=> {
         </div>
 
 
-    </>
+    </section>
   );
 };
 
